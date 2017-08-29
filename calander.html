@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calander</title>
+</head>
+
+<style>
+	
+	body {
+		color: indianred;
+	}
+	
+	.container {
+		width: 80%;
+		margin: 0% auto;
+	}
+	
+	header {
+		background: #55d6aa;
+	}
+	
+	header::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	
+	nav {
+		float: right;
+	}
+	
+	nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;	
+	}
+	
+	nav li {
+	display: inline-block;
+	margin-left: 70px;
+    padding-top: 25px;
+	position: relative;
+	
+	}
+	
+	nav a {
+		color: #444;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 14px;
+		
+	}
+	
+	nav a:hover {
+		color: #000;
+	}
+	
+	nav a::before {
+		content: '';
+		display: block;
+		height: 5px;
+		background-color: #444;
+		
+		position: absolute;
+		top: 0;
+		width: 0%;
+		
+		transition: all ease-in-out 250ms;
+
+	}
+	
+	nav a:hover::before {
+		width: 100%;
+	}
+
+	.calander {
+		text-align: center;
+	}
+	
+	
+	
+	</style>
+
+<body style="background: darkturquoise;">
+
+<header>
+	<div class="container">
+		
+		<nav>
+			<ul>
+				<li><a href="welcome.html">Home</a></li>
+				<li><a href="calander.html">Calander</a></li>
+				<li><a href="#">Suggest Events</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	
+	
+</header>
+
+<div class="calander">
+	
+	<h1>Hello</h1>
+	
+	<iframe src="https://calendar.google.com/calendar/embed?src=0r2u5g655bg6m7dqpl3j7jg3c0%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+</body>
+</html>
